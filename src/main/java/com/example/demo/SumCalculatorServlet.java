@@ -13,11 +13,11 @@ public class SumCalculatorServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");
         resp.getWriter().write("<h1>Sum Calculator</h1>" +
-                "<form action='/sum-calculator-servlet' method='POST'>" +
+                "<form action='/demo-1.0-SNAPSHOT/sum-calculator-servlet' method='POST'>" +
                 "Number 1: <input type='number' name='num1'><br>" +
                 "Number 2: <input type='number' name='num2'><br>" +
                 "<button type='submit'>Calculate</button></form>" +
-                "<a href='/index.jsp'>Back to index Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to index Page</a>");
     }
 
     @Override
@@ -28,7 +28,7 @@ public class SumCalculatorServlet extends HttpServlet {
 
         resp.setContentType("text/html");
         resp.getWriter().write("<h1>Result: " + num1 + " + " + num2 + " = " + sum + "</h1>" +
-                "<a href='/sum-calculator-servlet'>Calculate Again</a><br>" +
-                "<a href='/index.jsp'>Back to index Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/sum-calculator-servlet'>Calculate Again</a><br>" +
+                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to index Page</a>");
     }
 }

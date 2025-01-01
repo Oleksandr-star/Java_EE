@@ -21,10 +21,10 @@ public class ProductListServlet extends HttpServlet {
             resp.getWriter().write("<li>" + product + "</li>");
         }
         resp.getWriter().write("</ul>" +
-                "<form action='/product-list-servlet' method='POST'>" +
+                "<form action='/demo-1.0-SNAPSHOT/product-list-servlet' method='POST'>" +
                 "Add Product: <input type='text' name='product'>" +
                 "<button type='submit'>Add</button></form>" +
-                "<a href='/index.jsp'>Back to index Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to index Page</a>");
     }
 
     @Override
@@ -33,6 +33,6 @@ public class ProductListServlet extends HttpServlet {
         if (product != null && !product.isBlank()) {
             products.add(product);
         }
-        resp.sendRedirect("/product-list-servlet");
+        resp.sendRedirect("/demo-1.0-SNAPSHOT/product-list-servlet");
     }
 }
