@@ -24,7 +24,7 @@ public class ProductListServlet extends HttpServlet {
                 "<form action='/demo-1.0-SNAPSHOT/product-list-servlet' method='POST'>" +
                 "Add Product: <input type='text' name='product'>" +
                 "<button type='submit'>Add</button></form>" +
-                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to index Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/index.xhtml'>Back to index Page</a>");
     }
 
     @Override

@@ -15,7 +15,7 @@ public class GreetingServlet extends HttpServlet {
                 "<form action='/demo-1.0-SNAPSHOT/greeting-servlet' method='POST'>" +
                 "Enter your name: <input type='text' name='name'>" +
                 "<button type='submit'>Submit</button></form>" +
-                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to Main Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/index.xhtml'>Back to Main Page</a>");
     }
 
     @Override
@@ -23,6 +23,6 @@ public class GreetingServlet extends HttpServlet {
         String name = req.getParameter("name");
         resp.setContentType("text/html");
         resp.getWriter().write("<h1>Welcome, " + (name != null ? name : "Guest") + "!</h1>" +
-                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to Main Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/index.xhtml'>Back to Main Page</a>");
     }
 }

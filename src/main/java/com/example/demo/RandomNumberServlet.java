@@ -17,7 +17,7 @@ public class RandomNumberServlet extends HttpServlet {
                 "Min: <input type='number' name='min'><br>" +
                 "Max: <input type='number' name='max'><br>" +
                 "<button type='submit'>Generate</button></form>" +
-                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to index Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/index.xhtml'>Back to index Page</a>");
     }
 
     @Override
@@ -29,6 +29,6 @@ public class RandomNumberServlet extends HttpServlet {
         resp.setContentType("text/html");
         resp.getWriter().write("<h1>Random Number: " + randomNum + "</h1>" +
                 "<a href='/demo-1.0-SNAPSHOT/random-number-servlet'>Generate Again</a><br>" +
-                "<a href='/demo-1.0-SNAPSHOT/index.jsp'>Back to index Page</a>");
+                "<a href='/demo-1.0-SNAPSHOT/index.xhtml'>Back to index Page</a>");
     }
 }

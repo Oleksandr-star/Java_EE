@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<head>
+	<title>JSF - Demo</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 20px;
+		}
+		h1 {
+			color: #007BFF;
+		}
+		h2 {
+			margin-top: 20px;
+			color: #333;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		li {
+			margin: 5px 0;
+		}
+	</style>
+</head>
+<body>
+<h1>Welcome to JSF Demo!</h1>
+<h2>Navigate to Servlets:</h2>
+<ul>
+	<li><h:link value="Greeting Servlet" outcome="greeting-servlet.java" /></li>
+	<li><h:link value="Product List Servlet" outcome="product-list-servlet.java" /></li>
+	<li><h:link value="Random Number Servlet" outcome="random-number-servlet.java" /></li>
+	<li><h:link value="Sum Calculator Servlet" outcome="sum-calculator-servlet.java" /></li>
+</ul>
+
+<h2>Navigate to JSF Pages:</h2>
+<ul>
+	<li><h:link value="Current Date" outcome="displayDate.xhtml" /></li>
+	<li><h:link value="Manage Variable" outcome="variable.xhtml" /></li>
+	<li><h:link value="Name Validator" outcome="nameValidation.xhtml" /></li>
+</ul>
+</body>
+</html>
